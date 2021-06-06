@@ -8,8 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		2E305EFA266CFC74008C8307 /* RepoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E305EF9266CFC74008C8307 /* RepoRow.swift */; };
+		2E305EFC266CFDC4008C8307 /* RepoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E305EFB266CFDC4008C8307 /* RepoDetailView.swift */; };
+		2E305F00266CFF6C008C8307 /* Repo+mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E305EFF266CFF6C008C8307 /* Repo+mock.swift */; };
+		2E305F02266CFFAD008C8307 /* User+mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E305F01266CFFAD008C8307 /* User+mock.swift */; };
 		2ECE0162266CF14300ABA202 /* GitHubClientApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECE0161266CF14300ABA202 /* GitHubClientApp.swift */; };
-		2ECE0164266CF14300ABA202 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECE0163266CF14300ABA202 /* ContentView.swift */; };
+		2ECE0164266CF14300ABA202 /* RepoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECE0163266CF14300ABA202 /* RepoListView.swift */; };
 		2ECE0166266CF14900ABA202 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ECE0165266CF14900ABA202 /* Assets.xcassets */; };
 		2ECE0169266CF14900ABA202 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ECE0168266CF14900ABA202 /* Preview Assets.xcassets */; };
 		2ECE0171266CF61000ABA202 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECE0170266CF61000ABA202 /* Repo.swift */; };
@@ -18,9 +21,12 @@
 
 /* Begin PBXFileReference section */
 		2E305EF9266CFC74008C8307 /* RepoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoRow.swift; sourceTree = "<group>"; };
+		2E305EFB266CFDC4008C8307 /* RepoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoDetailView.swift; sourceTree = "<group>"; };
+		2E305EFF266CFF6C008C8307 /* Repo+mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Repo+mock.swift"; sourceTree = "<group>"; };
+		2E305F01266CFFAD008C8307 /* User+mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+mock.swift"; sourceTree = "<group>"; };
 		2ECE015E266CF14300ABA202 /* GitHubClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ECE0161266CF14300ABA202 /* GitHubClientApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubClientApp.swift; sourceTree = "<group>"; };
-		2ECE0163266CF14300ABA202 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2ECE0163266CF14300ABA202 /* RepoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoListView.swift; sourceTree = "<group>"; };
 		2ECE0165266CF14900ABA202 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2ECE0168266CF14900ABA202 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2ECE016A266CF14900ABA202 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -39,6 +45,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E305EFD266CFE00008C8307 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2ECE0163266CF14300ABA202 /* RepoListView.swift */,
+				2E305EFB266CFDC4008C8307 /* RepoDetailView.swift */,
+				2E305EF9266CFC74008C8307 /* RepoRow.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2E305EFE266CFF40008C8307 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				2E305EFF266CFF6C008C8307 /* Repo+mock.swift */,
+				2E305F01266CFFAD008C8307 /* User+mock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		2ECE0155266CF14300ABA202 = {
 			isa = PBXGroup;
 			children = (
@@ -59,8 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				2ECE0161266CF14300ABA202 /* GitHubClientApp.swift */,
-				2ECE0163266CF14300ABA202 /* ContentView.swift */,
-				2E305EF9266CFC74008C8307 /* RepoRow.swift */,
+				2E305EFD266CFE00008C8307 /* Views */,
 				2ECE0174266CF62600ABA202 /* Models */,
 				2ECE0165266CF14900ABA202 /* Assets.xcassets */,
 				2ECE016A266CF14900ABA202 /* Info.plist */,
@@ -73,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				2ECE0168266CF14900ABA202 /* Preview Assets.xcassets */,
+				2E305EFE266CFF40008C8307 /* Mocks */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -156,9 +181,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E305EFA266CFC74008C8307 /* RepoRow.swift in Sources */,
+				2E305F00266CFF6C008C8307 /* Repo+mock.swift in Sources */,
 				2ECE0173266CF61800ABA202 /* User.swift in Sources */,
 				2ECE0171266CF61000ABA202 /* Repo.swift in Sources */,
-				2ECE0164266CF14300ABA202 /* ContentView.swift in Sources */,
+				2E305EFC266CFDC4008C8307 /* RepoDetailView.swift in Sources */,
+				2ECE0164266CF14300ABA202 /* RepoListView.swift in Sources */,
+				2E305F02266CFFAD008C8307 /* User+mock.swift in Sources */,
 				2ECE0162266CF14300ABA202 /* GitHubClientApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,7 +316,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"GitHubClient/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "GitHubClient/Preview\\ Content";
 				DEVELOPMENT_TEAM = B6986ADXUT;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = GitHubClient/Info.plist;
@@ -310,7 +338,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"GitHubClient/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "GitHubClient/Preview\\ Content";
 				DEVELOPMENT_TEAM = B6986ADXUT;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = GitHubClient/Info.plist;
