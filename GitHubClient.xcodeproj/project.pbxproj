@@ -7,19 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E305EFA266CFC74008C8307 /* RepoRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E305EF9266CFC74008C8307 /* RepoRow.swift */; };
 		2ECE0162266CF14300ABA202 /* GitHubClientApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECE0161266CF14300ABA202 /* GitHubClientApp.swift */; };
 		2ECE0164266CF14300ABA202 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECE0163266CF14300ABA202 /* ContentView.swift */; };
 		2ECE0166266CF14900ABA202 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ECE0165266CF14900ABA202 /* Assets.xcassets */; };
 		2ECE0169266CF14900ABA202 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ECE0168266CF14900ABA202 /* Preview Assets.xcassets */; };
+		2ECE0171266CF61000ABA202 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECE0170266CF61000ABA202 /* Repo.swift */; };
+		2ECE0173266CF61800ABA202 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECE0172266CF61800ABA202 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E305EF9266CFC74008C8307 /* RepoRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoRow.swift; sourceTree = "<group>"; };
 		2ECE015E266CF14300ABA202 /* GitHubClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHubClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ECE0161266CF14300ABA202 /* GitHubClientApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubClientApp.swift; sourceTree = "<group>"; };
 		2ECE0163266CF14300ABA202 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2ECE0165266CF14900ABA202 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2ECE0168266CF14900ABA202 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2ECE016A266CF14900ABA202 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2ECE0170266CF61000ABA202 /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
+		2ECE0172266CF61800ABA202 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +60,8 @@
 			children = (
 				2ECE0161266CF14300ABA202 /* GitHubClientApp.swift */,
 				2ECE0163266CF14300ABA202 /* ContentView.swift */,
+				2E305EF9266CFC74008C8307 /* RepoRow.swift */,
+				2ECE0174266CF62600ABA202 /* Models */,
 				2ECE0165266CF14900ABA202 /* Assets.xcassets */,
 				2ECE016A266CF14900ABA202 /* Info.plist */,
 				2ECE0167266CF14900ABA202 /* Preview Content */,
@@ -67,6 +75,15 @@
 				2ECE0168266CF14900ABA202 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2ECE0174266CF62600ABA202 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2ECE0170266CF61000ABA202 /* Repo.swift */,
+				2ECE0172266CF61800ABA202 /* User.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +155,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E305EFA266CFC74008C8307 /* RepoRow.swift in Sources */,
+				2ECE0173266CF61800ABA202 /* User.swift in Sources */,
+				2ECE0171266CF61000ABA202 /* Repo.swift in Sources */,
 				2ECE0164266CF14300ABA202 /* ContentView.swift in Sources */,
 				2ECE0162266CF14300ABA202 /* GitHubClientApp.swift in Sources */,
 			);
