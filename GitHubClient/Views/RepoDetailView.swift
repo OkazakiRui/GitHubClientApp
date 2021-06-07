@@ -46,3 +46,9 @@ struct RepoDetailView_Previews: PreviewProvider {
         RepoDetailView(repo: .mock1)
     }
 }
+
+//
+//  kakattajikan
+//  1:39:33
+//
+//
